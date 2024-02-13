@@ -1,11 +1,18 @@
-const a = 5;
-const b = 1;
-const myName = "jase";
+const me = "Jase";
+const array = [1, 2, 3, "four", true, false, me];
+console.log(array);
+array[2] = "two";
+console.log(array);
+array.push("add");
+console.log(array);
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("hello " + myName);
+// object : value having meaning
+const player = {
+  name: "nico",
+  sayHello: function (otherPersonsName) {
+    console.log("Hello! " + otherPersonsName + " nice to meet you!");
+  },
+};
 
-myName = "jaeseong";
-console.log("your new name is " + myName);
+console.log(player.name);
+player.sayHello("Lynn");
